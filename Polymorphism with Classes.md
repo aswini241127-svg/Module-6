@@ -26,7 +26,21 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
+```
+from abc import ABC, abstractmethod
+class Food(ABC):
+    @abstractmethod
+    def get_type(self) -> str:
+        pass
 
+    @abstractmethod
+    def get_color(self) -> str:
+        pass
+class Beans(Food):
+    def get_type(self) -> str:
+```
 ## Output
+<img width="587" height="90" alt="exp1" src="https://github.com/user-attachments/assets/3a74bab6-fb35-4b92-bf7d-14c9df80dfb6" />
 
 ## Result
+The program successfully creates class and returns type using polymorphism
